@@ -30,8 +30,8 @@ jobs:
       - name: Build public arcade site
         run: |
           mkdir -p _site
-          cp index.html styles.css arcade-games.css game.css game.js 2048.html _site/
-          cp -R chess-game fireboy-game _site/
+          cp index.html styles.css arcade-games.css _site/
+          cp -R chess-game 2048-game fireboy-game _site/
 
       - name: Upload QuickQuest Arcade
         uses: actions/upload-pages-artifact@v3
